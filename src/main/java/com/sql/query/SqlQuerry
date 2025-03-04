@@ -1,0 +1,24 @@
+MySql query
+
+show databases; it will show all the databasespresnt in the db
+
+create database [dbname];
+
+drop database [dbname]; it will drop database from db
+
+create table [tablename] (coll1 type(size)  extra req like notnull, unique0
+
+use [databasename] it will swith to particualr database u want to use
+
+show tables; it will show all the tables created
+
+create table student(id int(9) primary key, 
+                      name varchar(100) not null, city varchar(500));
+                      
+desc student;  // It will show the details of table;
+
+alter table [tablename] add [column_name] datatype;
+
+alter table student MODIFY phoneNumber varchar(12) not null;  
+
+alter table student MODIFY phoneNumber int(10); 
