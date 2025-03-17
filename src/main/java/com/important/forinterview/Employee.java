@@ -60,9 +60,7 @@ public class Employee {
 		for(Map.Entry<Integer, List<Employee>> set : map.entrySet())
 		{
 			System.out.println(set.getKey()+" "+set.getValue());
-		}
-		
-		
+		}	
 	}
 	
 	

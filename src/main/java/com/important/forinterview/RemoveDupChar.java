@@ -15,6 +15,6 @@ public class RemoveDupChar {
 		{
 			map.put(c, map.getOrDefault(c, 0)+1);
 		}
-		System.err.println(map);
+		System.out.println(map);
 	}
 }
