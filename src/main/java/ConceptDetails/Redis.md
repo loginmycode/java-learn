@@ -1,7 +1,7 @@
   - REDIS : 
     --- Key Features and Use Case 
         In Memory data store
-        Key valure Store
+        Key value Store
         Verstaile application
         
   

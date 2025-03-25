@@ -4,7 +4,7 @@
 
   __default scope in spring boot__
     - single instance will be created and shared across the spring container
-	- Best for stateless Bean
+	- Best for state less Bean
 	
 	``` 
 	@Component

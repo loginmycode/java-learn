@@ -47,6 +47,7 @@
     A financial application managing transactions and accounts. By using event sourcing, the system can reconstruct account histories, track every transaction, and provide audit trails for regulatory compliance.
 
 # CQRS - Command Query Responsibility segregation
+
   - It Separates the read and write operation of data store
   - Command update the state (Write Operation)
   - Query Fetch data from different model optimized for reads (Read Operation)
@@ -54,7 +55,8 @@
     An online retail application where the product catalog requires frequent updates and fast queries. Using CQRS, the write model ensures consistency when updating product information, while the read model provides quick responses for customer queries.'
   
 # SAGA Pattrn  (System for Automated Geoscientific Analyses)
-  - Saga manages distributed transactions across multiple microservices by coordinating a sequence of local transactions.
+
+  - SAGA manages distributed transactions across multiple Microservices by coordinating a sequence of local transactions.
   
     An order processing system where placing an order involves multiple services (payment, inventory, shipping). The saga pattern ensures that all steps are completed successfully, and if any step fails, compensating actions roll back the previous steps.
   

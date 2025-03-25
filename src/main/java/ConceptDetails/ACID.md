@@ -4,7 +4,7 @@ C - Consistency
 I - Isolation
 D - Durablity
 
-Atomicity : Each transaction is single unit that either succeed completely
+Atomicity: Each transaction is single unit that either succeed completely
 			or fails completely
 Consistency: Each transaction should follow the data base rule and 			   	          			  constrains keeping the database in valid state	      
 Isolation : Concurrent transaction happens separately each other are not 			visible until they are successfully completed.

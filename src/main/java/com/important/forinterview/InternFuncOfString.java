@@ -5,7 +5,7 @@ public class InternFuncOfString {
 	public static void main(String[] args) {
 		
 		String str = "Hello";
-		String str1= "Hell0";
+		String str1= "Hello";
 		
 		System.out.println(str.hashCode());
 		System.out.println(str.hashCode());
@@ -17,7 +17,12 @@ public class InternFuncOfString {
 		System.out.println(System.identityHashCode(str1));
 		System.out.println(System.identityHashCode(str3));
 		String  str4 =str3.intern();
-		System.out.println(System.identityHashCode(str4));
+		System.out.println("=======");
+		System.out.println(str4.hashCode());
+		
+		System.out.println(System.identityHashCode(str4)); // str, str1
+		System.out.println(System.identityHashCode(str));
+		System.out.println(System.identityHashCode(str1));
 		
 	}
 }

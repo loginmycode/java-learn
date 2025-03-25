@@ -12,7 +12,7 @@ JWT - JSON WEB TOKEN
 	   
    - How JWT WORKS
    * USER LOGS IN : Client(browser) sends a login credentials to server
-   * Server generates JWT : If credentials are are valid 
+   * Server generates JWT : If credentials are valid 
 	     It Contains User data
 	     It contains Secret key
    * Token sent to client : The JWT is sent back to the client and stored (usually 	       	 in localStorage or a cookie).
