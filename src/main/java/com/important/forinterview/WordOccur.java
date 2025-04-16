@@ -15,5 +15,6 @@ public class WordOccur {
 		 Map<String, Long> wordCount =list.stream().collect(Collectors.groupingBy(word -> word, Collectors.counting()));
 		 
 		 wordCount.forEach((word, count) -> System.out.println(word + " " + count));
-	}
+		
+}
 }

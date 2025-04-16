@@ -15,7 +15,7 @@ public class CollectionFunctions {
 
 	public static void checkListFunction()
 	{
-		List<Integer> list = new ArrayList();
+		List<Integer> list = new ArrayList<Integer>();
 		list.add(3);
 		list.add(6);
 		list.add(9);
@@ -24,7 +24,7 @@ public class CollectionFunctions {
 		Collections.sort(list);
 		System.out.println(list);
 		
-		List<String> stringList = new ArrayList();
+		List<String> stringList = new ArrayList<String>();
 		stringList.add("Hello");
 		stringList.add("Check");
 		stringList.add("Banana");

@@ -49,6 +49,7 @@ public class CharFrequencyJava8 {
 	
 	//List list =Arrays.stream(arr).sorted(Collections.reverseOrder()).collect(Collectors.toList());
 
+	List<Integer> l = Arrays.stream(arr).sorted().boxed().collect(Collectors.toList());
 	
 	}
 }

@@ -16,12 +16,13 @@ public class EmployeeWithStreamOperation {
 	public static void main(String[] args) {
 		
 		//highestAndLowest();
-		listTheEmpBasedOnDetails();
+		//listTheEmpBasedOnDetails();
+		findAverageSalary();
 	}
 	
 	public static void highestAndLowest()
 	{
-		List<Employee> list = new ArrayList();
+		List<Employee> list = new ArrayList<>();
 		list.add(new Employee(1,"Rama",20,"Mechanical", 6500));
 		list.add(new Employee(2,"Karan",24,"Mechanical", 50000));
 		list.add(new Employee(3,"Suman",45,"Electrical",  50000));
@@ -84,5 +85,21 @@ public class EmployeeWithStreamOperation {
 		Map<String, List<String>> names = list.stream().collect(Collectors.groupingBy(name ->name.getName(), Collectors.mapping(emp -> emp.getDepartment(), Collectors.toList())));
 		System.out.println(names);
 		
+		//list.stream().collect(Collectors.groupingBy(Employee::Integer))
+		
+	}
+	
+	public static void findAverageSalary()
+	{
+		List<Employee> list = new ArrayList();
+		list.add(new Employee(1,"Rama",20,"Mechanical", 6500));
+		list.add(new Employee(2,"Karan",24,"Mechanical", 50000));
+		list.add(new Employee(3,"Suman",45,"Electrical",  50000));
+		list.add(new Employee(4,"Kumar",30,"Software", 60000));
+		list.add(new Employee(4,"Deepti",28,"Software", 90000));
+		
+		Double res =list.stream().collect(Collectors.averagingDouble(Employee::getSalary));
+		System.out.println(res);
+		//return res;
 	}
 }
